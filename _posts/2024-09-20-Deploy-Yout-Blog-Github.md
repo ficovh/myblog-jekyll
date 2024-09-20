@@ -45,6 +45,7 @@ published: true
 
 ```
    $ git init
+   $ git add *
    $ git remote add origin git@github.com:ficovh/myblog.git
 ```
 
