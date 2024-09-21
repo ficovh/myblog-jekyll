@@ -21,6 +21,11 @@ published: true
    $ eval "$(ssh-agent -s)"
    > Agent pid 59566
   ```
+ _En fish shell la linea de arriba no trabaja correctamente, en su lugar ejecutamos._
+
+   ```
+   $ eval (ssh-agent -c)
+   ```
 
 3.- Agregar la llave creada para Github al agente ssh-agent
 
