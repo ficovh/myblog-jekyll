@@ -16,11 +16,21 @@ published: true
 
  ```
 
-2.- Iniciar el ssh-agent para administrar las llaves.
+2.- Iniciar el ssh-agent para administrar las llaves (Ej. zsh).
  ```
    $ eval "$(ssh-agent -s)"
    > Agent pid 59566
   ```
+ _En Oh-My-Zsh se puede incluir el plugin para el ssh-agent en .zshrc_
+
+   ```
+     plugins =(
+        git
+        ssh-agent
+
+      )
+   ```
+
  _En fish shell la linea de arriba no trabaja correctamente, en su lugar ejecutamos._
 
    ```
