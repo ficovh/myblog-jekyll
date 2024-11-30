@@ -1,22 +1,21 @@
 # Instalando y e iniciando PostgreSQL en Arch Linux
 
-**1.- Instalar PostgreSQL via pacman**
+### 1.- Instalar PostgreSQL via pacman.
 
 ```
  sudo pacman -S postgresql 
 
 ```
 
-**2.- Ingresar como administrador de PotgreSQL e iniciar el motor de base de datos**
+### 2.- Ingresar como administrador de PotgreSQL e iniciar el motor de base de datos
 
 ```
   $ sudo su - postgres
    [sudo] password for ficovh:
 
    [postgres@devel ~]$ initdb -D /var/lib/postgres/data
-
 ```
-**3.- configurar el servicio de PostgreSQL para iniciar automaticamente**
+### 3.- configurar el servicio de PostgreSQL para iniciar automaticamente.
 
 ```
 	$ sudo systemctl enable postgresql
@@ -32,7 +31,7 @@
   Type "help" for help.
 ```
 
-**4.- Tareas de administracion, creacion de base de datos, roles, schema (>15)**
+### 4.- Tareas de administracion, creacion de base de datos, roles, schema (>15)
 ```
 
  postgres=# create database customers ;
@@ -46,7 +45,7 @@
  logout
 ```
 
-**5.- Creando tablas en la base de datos customers y el usuario admindb**
+### Creando tablas en la base de datos customers y el usuario admindb
 
 ```
  $ psql -U admindb customers
@@ -66,9 +65,8 @@
   
 ```
 
-_Referencias:_
+### Referencias.
 
-[Learn PostgreSQL - Ferrari](https://www.packtpub.com/en-us/product/learn-postgresql-9781838985288)
-
-[Sitio oficial de PostgreSQL](https://www.postgresql.org)
+* [Learn PostgreSQL - Ferrari](https://www.packtpub.com/en-us/product/learn-postgresql-9781838985288)
+* [Sitio oficial de PostgreSQL](https://www.postgresql.org)
 
