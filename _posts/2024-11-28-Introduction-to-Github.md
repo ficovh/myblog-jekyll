@@ -1,13 +1,20 @@
 ---
-title: Publicando un blog en Github
+title: Introducion a Github
 published: true
 ---
 
-### Descargando el software, en este caso un blog escrito en [Jekyll](https://www.jekyllrb.com).
+## Lista de requerimientos.
 
-* [Hacker-Blog](https://github.com/tocttou/hacker-blog)
+* Cuenta en Github.com (obligatorio)
+* [Git](https://www.git-scm.com) 
+* Una llave publica para autenticar en Github
+* Terminal (Linux, Windows o Mac) para ejecutar git
 
-### Notas sobre Github.com
+
+### Creando un repositorio nuevo en Github.com
+
+![](/_imgs/new-repo.jpg)
+
 
 1.- Generar una llave para autentificar y subirla a github.
 
