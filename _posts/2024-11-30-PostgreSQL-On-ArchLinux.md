@@ -7,7 +7,7 @@
 
 ```
 
-### 2.- Ingresar como administrador de PotgreSQL e iniciar el motor de base de datos
+### 2.- Ingresar como administrador de PotgreSQL e iniciar el cluster de la base de datos
 
 ```
   $ sudo su - postgres
