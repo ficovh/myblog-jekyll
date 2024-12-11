@@ -11,9 +11,13 @@ published: true
 * Terminal (Linux, Windows o Mac) para ejecutar git
 
 
-### Creando un repositorio nuevo en Github.com
+### Crea un repositorio nuevo en tu cuenta de [Github](https://github.com)
 
-![](/_imgs/new-repo.jpg)
+![Screenshot](https://i.imgur.com/LvzsrrK.jpg)
+
+### La salida de Github es la siguiente.
+
+![Salida](https://i.imgur.com/ZOAFQXl.png)
 
 
 1.- Generar una llave para autentificar y subirla a github.
