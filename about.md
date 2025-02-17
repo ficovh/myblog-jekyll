@@ -9,7 +9,7 @@ title: About
  * Trabajo principalmente con sistemas Linux y BSD
  * Uso C, Python, Perl.
  * Me gusta la fotografía y el café
- * Mi sitio (bsdguy.net)[https://www.bsdguy.net] tiene mas info
- * Mi twitter es: @ficovh
+ * Mi sitio [bsdguy.net](https://www.bsdguy.net) tiene mas info
+ * Mi twitter es: [@ficovh](https://www.twitter.com/ficovh)
 
 
