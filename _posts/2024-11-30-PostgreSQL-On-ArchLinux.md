@@ -1,3 +1,7 @@
+---
+title: PostgreSQL en Arch Linux
+published: true
+---
 # Instalando y e iniciando PostgreSQL en Arch Linux
 
 ### 1.- Instalar PostgreSQL via pacman.

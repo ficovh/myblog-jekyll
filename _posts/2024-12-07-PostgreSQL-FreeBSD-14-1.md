@@ -1,3 +1,7 @@
+---
+title: PostgreSQL en FreeBSD 14.
+published: true
+---
 # PostgreSQL en FreeBSD 14.1
 
 ### Actualizando paquetes e instalando PostgreSQL 17 server
