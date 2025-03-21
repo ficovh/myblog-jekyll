@@ -3,8 +3,9 @@ title: Usando MySQL
 published: true
 ---
 
-### En este tutorial, asumimos MySQL está instalado, corriendo y que la cuenta del root 
-### está funcionando.
+### En este tutorial asumimos que el servidor de MySQL está instalado, corriendo y que la cuenta del root ha sido configurada y se conoce el password.
+
+El usuario root (administrador) debe usarse exclusivamente para tareas de administracion, para aprender SQL es necesario configurar un usuario y darle privilegios sobre una base dedatos determinada.
 
 ### Iniciando mysql (client)
 
@@ -88,16 +89,16 @@ mi caso (Linux) ya tengo la ruta agregada.
  ```
  Como puedes notar, la base de datos *clientes* previamente creada y asignada al usuario isabel
  esta asignada correctamente, en este momento el usuario puede hacer operaciones sobre la base de datos
- en cuestion, primeramente, seleccionando la base de datos de la siguiente manera.
+ en cuestion, primeramente, seleccionando la base de datos con la sentencia **USE** de la siguiente manera.
 
  ```
  MariaDB [(none)]> USE clientes ;
  Database changed
  MariaDB [clientes]>
  ```
- Si notas, el prompt de MariaDB (mysql) ha cambiado, ahora apunta a la base de datos *cliente*
- en este momento podemos crear tablas, alterar o actualizar contenido de la base de datos
- en SQL, una tabla sencilla sería.
+**USE** nos permite seleccionar la base de datos para trabajar con ella, si notas, el prompt de MariaDB (mysql) ha cambiado, ahora apunta a la base de datos *cliente* en este momento podemos crear tablas, alterar o actualizar contenido de la base de datos enSQL. 
+
+Una tabla sencilla sería.
 
 ```
   MariaDB [clientes]> CREATE TABLE nombres (id INT not null auto_increment, nombre char(80), email char(80), telefono char(10), PRIMARY KEY (id));
@@ -125,6 +126,27 @@ mi caso (Linux) ya tengo la ruta agregada.
 ```
 
  La  instruccion **SELECT** ejecuta una consulta a la base de datos via la tabla nombres y despliega todo el contenido.
+
+7.- Actualizando **UPDATE** registros en la base de datos.
+
+ ```
+ MariaDB [clientes]> UPDATE nombres SET telefono=9996789030 WHERE id=1;
+ Query OK, 1 row affected (0.057 sec)
+ Rows matched: 1  Changed: 1  Warnings: 0
+
+ MariaDB [clientes]>
+
+```
+
+La consulta (query) hace lo siguiente: 
+Actualiza el registro con id=1 y sustituye el campo telefono por un numero nuevo. 
+El resultado fue, Query OK y 1 renglon afectado, 0 warnings (alertas)
+
+
+Continua....
+
+
+
  
 
 
